@@ -1,6 +1,7 @@
 
-
+'use client'
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { useGetPodcast } from "@/features/podcast/api/use-get-podcast";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -11,6 +12,8 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 export default function Podcast() {
+  const {data} = useGetPodcast()
+  console.log("data", data)
   return (
     <section className="container mx-auto">
       <h1>lista av pdocast</h1>

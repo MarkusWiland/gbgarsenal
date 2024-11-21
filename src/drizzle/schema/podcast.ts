@@ -1,12 +1,12 @@
 import { pgTable, serial, text } from 'drizzle-orm/pg-core';
 
-const podcasts = pgTable('podcasts', {
+const podcast = pgTable('podcast', {
   id: serial('id').primaryKey(),
   title: text('title').notNull(),
-  clerkUserId: text("clerkUserId").notNull(),
+  description: text("description").notNull(),
   url: text("url").notNull(),
 });
 
 
 
-export default podcasts;
+export default podcast;

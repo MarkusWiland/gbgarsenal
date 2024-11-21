@@ -1,6 +1,6 @@
 import { pgTable, serial, text } from 'drizzle-orm/pg-core';
 
-export const posts = pgTable('posts', {
+ const comments = pgTable('comments', {
   id: serial('id').primaryKey(),
   name: text('name').notNull(),
   title: text('age').notNull(),
@@ -9,3 +9,4 @@ export const posts = pgTable('posts', {
 
 
 
+export default comments

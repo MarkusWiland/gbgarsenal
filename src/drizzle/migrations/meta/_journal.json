@@ -8,6 +8,34 @@
       "when": 1731330921617,
       "tag": "0000_motionless_silver_samurai",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1731415296885,
+      "tag": "0001_unknown_sasquatch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1731415337856,
+      "tag": "0002_bored_moon_knight",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1732108265414,
+      "tag": "0003_wet_mysterio",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1732111577114,
+      "tag": "0004_lovely_stepford_cuckoos",
+      "breakpoints": true
     }
   ]
 }

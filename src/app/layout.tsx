@@ -1,20 +1,11 @@
+import { Toaster } from "@/components/ui/sonner";
 import { QueryProvider } from "@/providers/query-providers";
+import { SheetProvider } from "@/providers/sheet-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Header from "./_components/header";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,14 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+  >
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased dotted-background`}
       >
         <Header />
         <QueryProvider>
- 
+          <SheetProvider />
+          <Toaster />
         {children}
         </QueryProvider>
       </body>
